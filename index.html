@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeadlineBuddy</title>
+<meta name="description" content="A simulated Alexa+ experience that turns big deadlines into a daily plan, remembers your week, and re-plans when you fall behind.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#17202B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <img src="assets/icon.svg" alt="" width="32" height="32">
+    <div>
+      <strong>DeadlineBuddy</strong>
+      <span>A simulated Alexa+ experience</span>
+    </div>
+  </div>
+  <div class="clock" aria-label="Simulated clock">
+    <span id="clock-date"></span>
+    <button id="next-day" type="button" title="Move the simulated clock to tomorrow">Next day</button>
+    <button id="reset" type="button" class="quiet" title="Start over with the example week">Reset</button>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="device-col">
+    <div class="device" aria-label="Smart display">
+      <div class="screen" id="screen">
+        <div class="notice" id="notice" hidden></div>
+        <div class="card" id="card" aria-live="polite"></div>
+        <div class="week" id="week" aria-label="This week's plan"></div>
+        <div class="voicebar" id="voicebar"></div>
+      </div>
+    </div>
+    <div class="trace">
+      <h2>What the agent did</h2>
+      <ol id="trace"></ol>
+    </div>
+  </section>
+
+  <aside class="talk">
+    <div class="chat" id="chat" aria-live="polite"></div>
+    <div class="chips" id="chips"></div>
+    <form id="ask" class="ask" autocomplete="off">
+      <button type="button" id="mic" class="mic" title="Speak (Chrome and Edge)" aria-label="Speak">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z" fill="currentColor"/></svg>
+      </button>
+      <input id="say" type="text" placeholder="Say something to Alexa…" aria-label="What you say">
+      <button id="send" type="submit">Say it</button>
+    </form>
+    <div class="memory">
+      <h2>What Buddy remembers</h2>
+      <ul id="memory"></ul>
+    </div>
+  </aside>
+</main>
+<script src="agent.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
