@@ -8,9 +8,9 @@
 | מה | קישור |
 |---|---|
 | ההאקתון | https://amazonappdev2026.devpost.com/ |
-| האפליקציה באוויר | LIVE_LINK |
-| הקוד | CODE_LINK |
-| הסרטון | VIDEO_LINK |
+| האפליקציה באוויר | https://tomerbot.github.io/deadlinebuddy/ |
+| הקוד | https://github.com/Tomerbot/deadlinebuddy |
+| הסרטון | https://www.youtube.com/watch?v=mOxur8U-hkM |
 
 **דדליין: יום שישי 23.10.2026, 22:00 שעון ישראל.**
 

@@ -11,10 +11,10 @@ A simulated Alexa+ experience for students: say what's due, and it plans every d
 **Built with:** javascript, html5, css3, web-speech-api, localstorage, service-worker, github-pages, claude
 
 **Try it out:**
-- LIVE_LINK
-- CODE_LINK
+- https://tomerbot.github.io/deadlinebuddy/
+- https://github.com/Tomerbot/deadlinebuddy
 
-**Video demo:** VIDEO_LINK
+**Video demo:** https://www.youtube.com/watch?v=mOxur8U-hkM
 
 ---
 

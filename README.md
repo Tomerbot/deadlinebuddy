@@ -2,7 +2,7 @@
 
 **A simulated Alexa+ experience for students: say what's due, and it plans every day before the deadline, remembers your week, and re-plans when you fall behind.**
 
-Live demo: LIVE_LINK · Demo video: VIDEO_LINK
+Live demo: https://tomerbot.github.io/deadlinebuddy/ · Demo video: https://www.youtube.com/watch?v=mOxur8U-hkM
 
 ![DeadlineBuddy on the smart display](submission/screenshot.png)
 
